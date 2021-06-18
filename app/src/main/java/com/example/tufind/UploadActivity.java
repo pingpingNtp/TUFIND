@@ -112,6 +112,7 @@ public class UploadActivity extends AppCompatActivity implements AdapterView.OnI
                 Log.d("iscomming", String.valueOf(valid));
 
                 if(valid){
+//                    startActivity(new Intent(MainActivity.this, LoginUiActivity.class));
                     if(FirebaseAuth.getInstance().getCurrentUser()==null){
                         startActivity(new Intent(UploadActivity.this, LoginUiActivity.class));
                     }else{
@@ -123,6 +124,7 @@ public class UploadActivity extends AppCompatActivity implements AdapterView.OnI
                                     DocumentSnapshot documentSnapshot =task.getResult();
                                     if(documentSnapshot.exists() && documentSnapshot != null){
                                         startActivity(new Intent(UploadActivity.this, ProfileActivity.class));
+//                                startActivity(new Intent(MainActivity.this, LoginUiActivity.class));
                                     }else{
                                         startActivity(new Intent(UploadActivity.this, LoginUiActivity.class));
                                     }
@@ -220,6 +222,13 @@ public class UploadActivity extends AppCompatActivity implements AdapterView.OnI
                 ByteArrayOutputStream baos = new ByteArrayOutputStream();
                 bmp.compress(Bitmap.CompressFormat.JPEG, 10, baos);
                 byte[] data = baos.toByteArray();
+
+                if(data.length>350000){
+                    bmp = MediaStore.Images.Media.getBitmap(getContentResolver(), ImageData);
+                    baos = new ByteArrayOutputStream();
+                    bmp.compress(Bitmap.CompressFormat.JPEG, 5, baos);
+                    data = baos.toByteArray();
+                }
 
                 progressBar.setVisibility(View.VISIBLE);
                 StorageReference ImageFolder=null;
@@ -463,8 +472,11 @@ public class UploadActivity extends AppCompatActivity implements AdapterView.OnI
                 }
                 if(item.getItemId() == R.id.statistic){
                     Log.e("MainActivity", "statistic");
+//                    itemStr="history";
+//                    Intent intent1 = new Intent(ResultActivity.this, HistoryActivity.class);
+//                    startActivity(intent1);
                     if(valid){
-
+//                    startActivity(new Intent(MainActivity.this, LoginUiActivity.class));
                         if(FirebaseAuth.getInstance().getCurrentUser()==null){
                             startActivity(new Intent(UploadActivity.this, LoginUiActivity.class));
                         }else{
@@ -490,7 +502,9 @@ public class UploadActivity extends AppCompatActivity implements AdapterView.OnI
 
                 }
                 if(item.getItemId() == R.id.upload){
+//                    startActivity(new Intent(UploadActivity.this, UploadActivity.class));
                     if(valid){
+//                    startActivity(new Intent(MainActivity.this, LoginUiActivity.class));
                         if(FirebaseAuth.getInstance().getCurrentUser()==null){
                             startActivity(new Intent(UploadActivity.this, LoginUiActivity.class));
                         }else{
@@ -551,5 +565,5 @@ public class UploadActivity extends AppCompatActivity implements AdapterView.OnI
             return detail;
         }
     }
-    //***********************************************************************
+    //***************************************************************************1111
 }
