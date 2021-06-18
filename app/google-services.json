@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "171143367018",
+    "project_id": "tu-find-test",
+    "storage_bucket": "tu-find-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171143367018:android:24bd09126ed8ac573dfd13",
+        "android_client_info": {
+          "package_name": "com.example.tufind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171143367018-jp3eh5nsbfkop599ip9p47i70sf2grak.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tufind",
+            "certificate_hash": "e23ff6027a5a057f2b3fd332c018dfd3f4a153cb"
+          }
+        },
+        {
+          "client_id": "171143367018-qv53ksk28cn679dcct0eg390nieuua00.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIHUTrmh83aOUOCeKQ45Xpgc5YX8Z0fr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171143367018-qv53ksk28cn679dcct0eg390nieuua00.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

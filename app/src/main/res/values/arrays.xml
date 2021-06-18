@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="building_array">
+        <item>@string/LAWS</item>
+        <item>@string/TBS</item>
+        <item>@string/TBS</item>
+        <item>@string/ECON</item>
+        <item>@string/SW</item>
+        <item>@string/SA</item>
+        <item>@string/ARTS</item>
+        <item>@string/JC</item>
+        <item>@string/TSE</item>
+        <item>@string/SIIT</item>
+        <item>@string/TDS</item>
+        <item>@string/LSED</item>
+        <item>@string/FINEART</item>
+        <item>@string/KNK</item>
+        <item>@string/PYC</item>
+        <item>@string/PYC2</item>
+        <item>@string/LITU</item>
+        <item>@string/SC1</item>
+        <item>@string/SC2</item>
+        <item>@string/SC3</item>
+        <item>@string/LC1</item>
+        <item>@string/LC2</item>
+        <item>@string/LC3</item>
+        <item>@string/LC4</item>
+        <item>@string/LC5</item>
+    </string-array>
+</resources>

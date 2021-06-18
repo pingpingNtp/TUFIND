@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="150dp"-->
+<!--    android:layout_height="220dp"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_marginStart="16dp"-->
+<!--    android:background="@drawable/ic_allimage">-->
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/rImage"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="4dp"-->
+<!--        android:layout_marginBottom="4dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+
+<!--&lt;!&ndash;    m<IageView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/text"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height=""&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginEnd="4dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginBottom="4dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent" />&ndash;&gt;-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/rTitleTv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="150dp"-->
+<!--        android:text="product_name"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:backgroundTint="@color/white"/>-->
+
+<!--    <TextView-->
+<!--    android:id="@+id/rdetail"-->
+<!--    android:layout_width="0dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginStart="16dp"-->
+<!--    android:layout_marginTop="5dp"-->
+<!--    android:layout_marginEnd="16dp"-->
+<!--    android:text="@android:string/fingerprint_icon_content_description"-->
+<!--        android:textColor="@color/black"-->
+<!--    android:textSize="10sp"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintHorizontal_bias="0.0"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    app:layout_constraintTop_toBottomOf="@+id/rTitleTv" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/rDistance"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="95dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        android:text="Distance"-->
+<!--        android:textSize="10sp"-->
+<!--        android:textColor="@color/black"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/rdetail" />-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="16dp"
+    android:orientation="vertical">
+
+<!--    android:layout_margin="dp">-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="175dp"
+        android:layout_height="250dp"
+        app:cardCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/rImage"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_allimage" />
+
+            <TextView
+                android:id="@+id/rTitleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rImage"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="15dp"
+                android:maxLines="2"
+                android:layout_marginStart="5dp"
+                android:text="Brochure"
+                android:textColor="#262626"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/rdes"
+                android:layout_below="@id/rTitleTv"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:maxLines="2"
+                android:drawablePadding="10dp"
+                android:textSize="12dp"
+                android:ellipsize="end"
+                android:text="detail"
+                android:layout_marginStart="98dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
